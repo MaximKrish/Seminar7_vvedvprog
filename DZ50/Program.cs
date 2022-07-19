@@ -1,5 +1,5 @@
-﻿// Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, 
-// и возвращает значение этого элемента или же указание, что такого элемента нет.
+﻿// // Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, 
+// // и возвращает значение этого элемента или же указание, что такого элемента нет.
 
 Console.Write("Введите число c = ");
 int c = Convert.ToInt32(Console.ReadLine());
@@ -47,24 +47,17 @@ int m = Convert.ToInt32(Console.ReadLine());
 PrintMatr(CreateMatr(n, m));
 
 
-
-// Ручной ввод
-// int[, ] CreateMatr(int n, int m)
+// // 50
+// int[, ] CreateMatrix(int[, ] matrix)
 // {
-//     int[, ] matrix = new int[n ,m];
 //     for (int i = 0; i < matrix.GetLength(0); i++)
 //     {
 //         for (int j = 0; j < matrix.GetLength(1); j++)
 //         {
-//             matrix[i, j] = Convert.ToInt32(Console.ReadLine());
+//             int x = Convert.ToInt32(Console.ReadLine());
+//             matrix[i , j] = x;
 //         }
 //     }
-//     return matrix;
-// }
-
-
-// void PrintMatr(int[, ] matrix)
-// {
 //     for (int i = 0; i < matrix.GetLength(0); i++)
 //     {
 //         for (int j = 0; j < matrix.GetLength(1); j++)
@@ -73,8 +66,22 @@ PrintMatr(CreateMatr(n, m));
 //         }
 //         Console.WriteLine();
 //     }
+
+//     return matrix;
 // }
 
-// int n = Convert.ToInt32(Console.ReadLine());
-// int m = Convert.ToInt32(Console.ReadLine());
-// PrintMatr(CreateMatr(n, m));
+
+// void CheckMatrix(int i, int j, int[, ] matrix)
+// {
+//     if (i < matrix.GetLength(0) && j < matrix.GetLength(1) && i >= 0 && j >= 0)
+//         Console.WriteLine(matrix[i, j]);
+//     else
+//         Console.WriteLine("Ты ошибся");
+// }
+
+// int[, ] matrix = new int[4, 4];
+// matrix = CreateMatrix(matrix);
+// Console.WriteLine("Введите координаты: ");
+// int i = Convert.ToInt32(Console.ReadLine());
+// int j = Convert.ToInt32(Console.ReadLine());
+// CheckMatrix(i, j, matrix);
