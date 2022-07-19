@@ -11,7 +11,7 @@ int[,] CreateMatr(int n, int m)
         {
             matrix[i, j] = new Random().Next(1, 100);
             matrix[0, 1] = 0;                           // искусственно вели значение 0
-            Console.Write(matrix[i, j] + "\t");
+            Console.Write(matrix[i, j] + "\t");         //  "\t" красивый выод матрицы с табуляцией
 
             //matrix[i, j] = Convert.ToInt32(Console.ReadLine()); ручной ввод
         }

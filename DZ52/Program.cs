@@ -10,7 +10,7 @@ int[,] CreateMatr(int n, int m)
         {
             matrix[i, j] = new Random().Next(1, 100);
             //matrix[i, j] = Convert.ToInt32(Console.ReadLine());
-            Console.Write(matrix[i, j] + "\t ");
+            Console.Write(matrix[i, j] + "\t ");                     //  "\t" красивый выод матрицы с табуляцией
         }
         Console.WriteLine();
     }
