@@ -12,9 +12,9 @@ for (int i = 0; i < matrix.GetLength(0); i++)
 {
     for (int j = 0; j < matrix.GetLength(1); j++)
     {
-        matrix[i, j] = random.NextDouble() * 100;
-        Console.Write("{0,6:F2}", matrix[i, j] + "\t");        //  "\t" красивый выод матрицы с табуляцией
-    }
+        matrix[i, j] = random.NextDouble() * 100;               // random.NextDouble - выдает число от 0 до 1, * 100 - округляет число
+        Console.Write("{0,6:F2}"+ "\t", matrix[i, j] );        //  "\t" красивый выод матрицы с табуляцией
+    }                                                          // "{0,6:F2}" F2 - количество знаков после запятой
     Console.WriteLine();
 }
 
